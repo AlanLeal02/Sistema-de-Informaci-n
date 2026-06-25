@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e9ecef; /* Fondo gris claro idéntico */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #404443; /* Color gris oscuro de la imagen */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.main-header p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+
+/* Contenedor del Formulario */
+.form-container {
+    max-width: 900px;
+    width: 90%;
+    background-color: #ffffff;
+    margin: -25px auto 40px auto; /* Hace el efecto de superposición */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Filas y Columnas */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 250px; /* Asegura responsividad en móviles */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas (Labels) */
+.form-group label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #1e3a5f; /* Color azul oscuro de los títulos de los inputs */
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+/* Inputs de Texto */
+.form-group input {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: #333333;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #404443;
+}
+
+/* Botón de Envío */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-button {
+    background-color: #404443; /* Mismo color que la cabecera */
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #2b2e2d;
+}
+
+/* Pie de Página */
+.main-footer {
+    background-color: #404443;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    margin-top: auto; /* Empuja el footer al fondo si hay poco contenido */
+}

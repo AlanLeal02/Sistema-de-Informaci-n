@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #515551;
+    line-height: 1.6;
+}
+
+/* Contenedor central */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabecera */
+.header {
+    background-color: #414640;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+/* Título de sección */
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    color: #000000;
+    font-size: 2rem;
+}
+
+/* Barra de ubicación */
+.location-section {
+    margin-top: -30px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.location-bar {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Dirección más larga */
+.input-group.address-group {
+    flex: 2;
+    min-width: 300px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+/* Inputs, Selects y Textarea */
+.input-group select,
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    background-color: white;
+    outline: none;
+}
+
+.input-group select:focus,
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #414640;
+}
+
+/* ========================= */
+/* SECCIÓN DEL REPORTE */
+/* ========================= */
+
+.reporte-section {
+    margin-bottom: 40px;
+}
+
+.reporte-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reporte-container .input-group {
+    margin-bottom: 20px;
+}
+
+.reporte-container textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.reporte-container small {
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+.reporte-container input[type="file"] {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+/* Botón */
+.boton-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.enviar_reporte {
+    background-color: #414640;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enviar.enviar_reporte {
+    background-color: #2f332f;
+}
+
+/* Footer */
+.footer {
+    background-color: #414640;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .location-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-group,
+    .input-group.address-group {
+        min-width: 100%;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+}

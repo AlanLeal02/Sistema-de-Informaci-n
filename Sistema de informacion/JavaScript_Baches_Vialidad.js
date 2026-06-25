@@ -1,0 +1,1032 @@
+const municipiosPorEstado = {
+    CDMX: [
+        "Álvaro Obregón",
+        "Azcapotzalco",
+        "Benito Juárez",
+        "Coyoacán",
+        "Cuajimalpa",
+        "Cuauhtémoc",
+        "Gustavo A. Madero",
+        "Iztacalco",
+        "Iztapalapa",
+        "Magdalena Contreras",
+        "Miguel Hidalgo",
+        "Milpa Alta",
+        "Tláhuac",
+        "Tlalpan",
+        "Venustiano Carranza",
+        "Xochimilco"
+    ],
+   
+    Aguascalientes: [
+        "Aguascalientes",
+        "Calvillo",
+        "Cosío",
+        "El Llano",
+        "Rincón de Romos",
+        "San José de Gracia",
+        "Tepezalá"
+    ],
+
+     Jalisco: [
+"Acatic",
+"Acatlán de Juárez",
+"Ahualulco de Mercado",
+"Amacueca",
+"Amatitán",
+"Ameca",
+"Arandas",
+"Atemajac de Brizuela",
+"Atengo",
+"Atenguillo",
+"Atotonilco el Alto",
+"Atoyac",
+"Autlán de Navarro",
+"Ayotlán",
+"Ayutla",
+"Bolaños",
+"Cabo Corrientes",
+"Cañadas de Obregón",
+"Casimiro Castillo",
+"Chapala",
+"Chimaltitán",
+"Chiquilistlán",
+"Cihuatlán",
+"Cocula",
+"Colotlán",
+"Concepción de Buenos Aires",
+"Cuautitlán de García Barragán",
+"Cuautla",
+"Cuquío",
+"Degollado",
+"Ejutla",
+"El Arenal",
+"El Grullo",
+"El Limón",
+"El Salto",
+"Encarnación de Díaz",
+"Etzatlán",
+"Gómez Farías",
+"Guachinango",
+"Guadalajara",
+"Hostotipaquillo",
+"Huejúcar",
+"Huejuquilla el Alto",
+"Huerta",
+"Ixtlahuacán de los Membrillos",
+"Ixtlahuacán del Río",
+"Jalostotitlán",
+"Jamay",
+"Jesús María",
+"Jilotlán de los Dolores",
+"Jocotepec",
+"Juanacatlán",
+"Juchitlán",
+"Lagos de Moreno",
+"Magdalena",
+"Mascota",
+"Mazamitla",
+"Mexticacán",
+"Mezquitic",
+"Mixtlán",
+"Ocotlán",
+"Ojuelos de Jalisco",
+"Pihuamo",
+"Poncitlán",
+"Puerto Vallarta",
+"Quitupan",
+"San Cristóbal de la Barranca",
+"San Diego de Alejandría",
+"San Gabriel",
+"San Ignacio Cerro Gordo",
+"San Juan de los Lagos",
+"San Juanito de Escobedo",
+"San Julián",
+"San Marcos",
+"San Martín de Bolaños",
+"San Martín Hidalgo",
+"San Miguel el Alto",   
+"San Pedro Tlaquepaque",
+"San Sebastián del Oeste",
+"Santa María de los Ángeles",
+"Santa María del Oro",
+"Sayula",
+"Tala",
+"Talpa de Allende",
+"Tamazula de Gordiano",
+"Tapalpa",
+"Tecalitlán",
+"Tecolotlán",
+"Techaluta de Montenegro",
+"Tenamaxtlán",
+"Teocaltiche",
+"Teocuitatlán de Corona",
+"Tepatitlán de Morelos",
+"Tequila",
+"Teuchitlán",
+"Tizapán el Alto",
+"Tlajomulco de Zúñiga",
+"Tlaquepaque",
+"Tonalá.",
+"Tonaya.",
+"Tonila.",
+"Totatiche.",
+"Tototlán.",
+"Tuxcacuesco.",
+"Tuxcueca.",
+"Tuxpan.",
+"Unión de San Antonio.",
+"Unión de Tula.",
+"Valle de Guadalupe.",
+"Valle de Juárez",
+"Villa Corona",
+"Vila Guerrero",
+"Villa Hidalgo",
+"Villa Purificación",
+"Yahualica de González Gallo",
+"Zacoalco de Torres",
+"Zapopan",
+"Zapotiltic.",
+"Zapotitlán de Vadillo.",
+"Zapotlán del Rey.",
+"Zapotlán el Grande.",
+"Zapotlanejo "
+],
+
+    "Baja California": [
+        "Ensenada",
+        "Mexicali",
+        "Playas de Rosarito",
+        "San Felipe",
+        "San Quintín",
+        "Tecate",
+        "Tijuana"
+    ],
+
+    "Baja California Sur": [
+    "Comondú",
+    "Mulegé",
+    "La Paz",
+    "Los Cabos",
+    "Loreto"
+],
+
+Campeche:[
+    "Calakmul",
+    "Calkiní",
+    "Campeche",
+    "Candelaria",
+    "Carmen",
+    "Champotón",
+    "Dzitbalché",
+    "Escárcega",
+    "Hecelchakán",
+    "Hopelchén",
+    "Palizada",
+    "Seybaplaya",
+    "Tenabo"
+],
+
+Chiapas: [
+"Acacoyagua",
+"Acala",
+"Acapetahua",
+"Aldama",
+"Altamirano",
+"Amatenango de la Frontera",
+"Amatenango del Valle",
+"Angel Albino Corzo",
+"Arriaga",
+"Bejucal de Ocampo",
+"Bella Vista",
+"Benemérito de las Américas",
+"Berriozábal",
+"Bochil",
+"Cacahoatán",
+"Capitán Luis Ángel Vidal",
+"Catazajá",
+"Chalchihuitán",
+"Chamula",
+"Chanal",
+"Chapultenango",
+"Chenalhó",
+"Chiapa de Corzo",
+"Chiapilla",
+"Chicoasén",
+"Chicomuselo",
+"Chilón",
+"Cintalapa",
+"Coapilla",
+"Comitán de Domínguez",
+"Conclución",
+"Copainalá",
+"El Bosque",
+"El Porvenir",
+"Escuintla",
+"Francisco León",
+"Frontera Comalapa",
+"Frontera Hidalgo",
+"Huehuetán",
+"Huitiupán",
+"Huixtla",
+"Huixtán",
+"Ixhuatán",
+"Ixtacomitán",
+"Ixtapa",
+"Ixtapangajoya",
+"Jiquipilas",
+"Jitotol",
+"Juárez",
+"La Concordia",
+"La Grandeza",
+"La Independencia",
+"La Libertad",
+"La Trinitaria",
+"Larráinzar",
+"Las Margaritas",
+"Las Rosas",
+"Mapastepec",
+"Maravilla Tenejapa",
+"Marqués de Comillas",
+"Mazapa de Madero",
+"Mazatán",
+"Metapa",
+"Mitontic",
+"Montecristo de Guerrero",
+"Motozintla",
+"Nicolás Ruíz",
+"Ocosingo",
+"Ocotepec",
+"Ocozocoautla de Espinosa",
+"Ostuacán",
+"Osumacinta",
+"Oxchuc",
+"Palenque",
+"Pantelhó",
+"Pantepec",
+"Pichucalco",
+"Pijijiapan",
+"Pueblo Nuevo Solistahuacán",
+"Rayón",
+"Reforma",
+"Rincón Chamula San Pedro",
+"Sabanilla",
+"Salto de Agua",
+"San Andrés Duraznal",
+"San Cristóbal de Las Casas",
+"San Fernando",
+"San Juan Cancuc",
+"San Lucas",
+"Santiago el Pinar",
+"Siltepec",
+"Simojovel",
+"Sitalá",
+"Socoltenango",
+"Soloasuchiapa",
+"Soyaló",
+"Suchiapa",
+"Suchiate",
+"Sunuapa",
+"Tapachula",
+"Tapalapa",
+"Tapilula",
+"Tecpatán",
+"Tenejapa",
+"Teopisca",
+"Tila",
+"Tonalá",
+"Totolapa",
+"Tumbalá",
+"Tuxtla Chico",
+"Tuxtla Gutiérrez",
+"Tuzantán",
+"Tzimol",
+"Unión Juárez",
+"Venustiano Carranza",
+"Villa Comaltitlán",
+"Villa Corzo",
+"Villaflores",
+"Yajalón",
+"Zinacantán"
+],
+
+Chihuahua:[
+"Ahumada",
+"Aldama",
+"Allende",
+"Aquiles Serdán",
+"Ascensión",
+"Bachíniva",
+"Belleza",
+"Batopilas de Manuel Gómez Morín",
+"Bocoyna",
+"Buenaventura",
+"Camargo",
+"Carichí",
+"Casas Grandes",
+"Chihuahua",
+"Chínipas",
+"Coronado",
+"Coyame del Sotol",
+"Cuauhtémoc",
+"Cusihuiriachi",
+"Delicias",
+"Dr. Belisario Domínguez",
+"El Tule",
+"Galeana",
+"Gómez Farías",
+"Gran Morelos",
+"Guachochi",
+"Guadalupe",
+"Guadalupe y Calvo",
+"Guazapares",
+"Guerrero",
+"Hidalgo del Parral",
+"Ignacio Zaragoza",
+"Janos",
+"Jiménez",
+"Juárez",
+"Julimes",
+"La Cruz",
+"López",
+"Madera",
+ "Maguarichi",
+"Manuel Benavides",
+"Matachí",
+ "Matamoros",
+ "Meoqui",
+ "Morelos",
+ "Moris",
+ "Namiquipa",
+ "Nonoava",
+ "Nuevo Casas Grandes",
+ "Ocampo",
+ "Ojinaga",
+ "Praxedis G. Guerrero",
+ "Riva Palacio",
+ "Rosales",
+ "Rosario",
+ "San Francisco de Borja",
+ "San Francisco de Conchos",
+ "San Francisco del Oro",
+ "Santa Bárbara",
+ "Santa Isabel",
+ "Satevó",
+ "Saucillo",
+ "Temósachic",
+ "Urique",
+ "Uruachi",
+ "Valle de Zaragoza"
+],
+
+Coahuila:[
+"Abasolo",
+"Acuña",
+"Allende",
+"Arteaga",
+"Candela",
+"Castaños",
+"Cuatro Ciénegas",
+"Escobedo",
+"Francisco I. Madero",
+"General Cepeda",
+"Guerrero",
+"Hidalgo",
+"Jiménez",
+"Juárez",
+"Lamadrid",
+"Matamoros",
+"Monclova",
+"Morelos",
+"Múzquiz",
+"Nadadores",
+"Nava",
+ "Ocampo",
+"Parras",
+"Piedras Negras",
+"Progreso",
+"Ramos Arizpe",
+"Sabinas",
+"Sacramento",
+"Saltillo",
+"San Buenaventura",
+"San Juan de Sabinas",
+"San Pedro",
+"Sierra Mojada",
+ "Torreón",
+"Viesca",
+"Villa Unión",
+ "Zaragoza"
+],
+  
+Colima:[
+"Armería",
+"Colima",
+"Comala",
+"Coquimatlán",
+"Cuauhtémoc",
+"Ixtlahuacán",
+"Manzanillo",
+"Minatitlán",
+"Tecomán",
+"Villa de Álvarez"
+],
+
+Durango: [
+"Canatlán",
+"Canelas",
+"Coneto de Comonfort",
+"Cuencamé",
+"Durango",
+"General Simón Bolívar",
+"Gómez Palacio",
+"Guadalupe Victoria",
+"Guanaceví",
+"Hidalgo",
+"Indé",
+"Lerdo",
+"Mapimí",
+"Mezquital",
+"Nazas",
+"Nombre de Dios",
+"Ocampo",
+"El Salto (Nuevo Pueblo)",
+"Pánuco de Coronado",
+"Peñón Blanco",
+"Poanas",
+"Pueblo Nuevo",
+"Rodeo",
+"San Bernardo",
+"San Dimas",
+"San Juan de Guadalupe",
+"San Juan del Río",
+"San Luis del Cordero",
+"San Pedro del Gallo",
+"Santa Clara",
+"Santiago Papasquiaro",
+"Súchil",
+"Tamazula",
+"Tepehuanes",
+"Tlahualilo",
+"Topia",
+"Vicente Guerrero",
+"Nuevo Ideal"
+],
+
+Guanajuato: [
+"Abasolo",
+"Acámbaro",
+"Apaseo el Alto",
+"Apaseo el Grande",
+"Atarjea",
+"Celaya",
+"Comonfort",
+"Coroneo",
+"Cortazar",
+"Cuerámaro",
+"Doctor Mora",
+"Dolores Hidalgo Cuna de la Independencia Nacional",
+"Guanajuato",
+"Huanímaro",
+"Irapuato",
+"Jaral del Progreso",
+"Jerécuaro",
+"León",
+"Manuel Doblado",
+"Moroleón",
+"Ocampo",
+"Pénjamo",
+"Purísima del Rincón",
+"Romita",
+"Salamanca",
+"Salvatierra",
+"San Diego de la Unión",
+"San Felipe",
+"San Francisco del Rincón",
+"San José Iturbide",
+"San Luis de la Paz",
+"San Miguel de Allende",
+"Santa Catarina",
+"Santa Cruz de Juventino Rosas",
+"Santiago Maratio",
+"Silao de la Victoria",
+"Tarandacuao",
+"Tarimoro",
+"Tierra Blanca",
+"Uriangato",
+"Valle de Santiago",
+"Victoria",
+"Villagrán",
+"Xichú",
+"Yuriria"
+],
+
+Guerrero: [
+    "Acapulco de Juárez",
+    "Acatepec",
+    "Ahuacuotzingo",
+    "Ajuchitlán del Progreso",
+    "Alcozauca de Guerrero",
+    "Alpoyeca", 
+    "Apaxtla",
+    "Arcelia",
+    "Atenango del Río",
+    "Atlamajalcingo del Monte",
+    "Atlixtac",
+    "Atoyac de Álvarez",
+    "Ayutla de los Libres",
+    "Azoyú",
+    "Benito Juárez",
+    "Buenavista de Cuéllar",
+    "Coahuayutla de José María Izazaga",
+    "Cocula",
+    "Copala",
+    "Copalillo",
+    "Copanatoyac",
+    "Coyuca de Benítez",
+    "Coyuca de Catalán",
+    "Cuajinicuilapa",
+    "Cualác",
+    "Cuautepec",
+    "Cuetzala del Progreso",
+    "Cutzamala de Pinzón",
+    "Chilapa de Álvarez",
+    "Chilpancingo de los Bravo",
+    "Florencio Villarreal",
+    "General Canuto A. Neri",
+    "General Heliodoro Castillo",
+    "Huamuxtitlán",
+    "Huitzuco de los Figueroa",
+    "Iguala de la Independencia",
+    "Iliatenco",
+    "Ixcateopan de Cuauhtémoc",
+    "Juchitlán",
+    "José Joaquín de Herrera",
+    "Juan R. Escudero",
+    "Las Vigas",
+    "Leonardo Bravo",
+    "Malinaltepec",
+    "Marquelia",
+    "Mártir de Cuilapan",
+    "Metlatónoc",
+    "Mochitlán",
+    "Olinalá",
+    "Ometepec",
+    "Ñuu Savi",
+    "Pedro Ascencio Alquisiras",
+    "Petatlán",
+    "Pungarabato",
+    "quechultenango",
+    "San Luis Acatlán",
+    "San Marcos",
+    "San Miguel Totolapan",
+    "San Nicolás",
+    "Santa Cruz del Rincón",
+    "Taxco de Alarcón",
+    "Tecoanapa",
+    "Técpan de Galeana",
+    "Teloloapan",
+    "Tepecoacuilco de Trujano",
+    "Tetipac",
+    "Tixtla de Guerrero",
+    "Tlacoachistlahuaca",
+    "Tlacoapa",
+    "Tlalchapa",
+    "Tlalixtaquilla de Maldonado",
+    "Tlapa de Comonfort",
+    "Tlapehuala",
+    "La Unión de Isidoro Montes de Oca",
+    "Xalpatláhuac",
+    "Xochihuehuetlán",
+    "Xochistlahuaca",
+    "Zapotitlán Tablas",
+    "Zihuatanejo de Azueta",
+    "Zirándaro",
+    "Zitlala"
+],
+
+Hidalgo: [
+"Agua Blanca de Iturbide",
+"Ajacuba",
+"Almoloya",
+"Apan",
+"El Arenal",
+"Atitalaquia",
+"Atlapexco",
+"Atotonilco de Tula",
+"Atotonilco el Grande",
+"Calnali",
+"Cardonal",
+"Cuautepec de Hinojosa",
+"Chapantongo",
+"Chapulhuacán",
+"Chilcuautla",
+"Eloxochitlán",
+"Emiliano Zapata",
+"Epazoyucan",
+"Francisco I. Madero",
+"Huasca de Ocampo",
+"Huautla",
+"Huazalingo",
+"Huehuetla",
+"Huejutla de Reyes",
+"Huichapan",
+"Ixmiquilpan",
+"Jacala de Ledezma",
+"Jaltocán",
+"Juárez Hidalgo",
+"Lolotla",
+"Metepec",
+"San Agustín Metzquititlán",
+"Metztitlán",
+"Mineral de la Reforma",
+"Mineral del Chico",
+"Mineral del Monte",
+"La Misión",
+"Mixquiahuala de Juárez",
+"Molango de Escamilla",
+"Nicolás Flores",
+"Nopala de Villagrán",
+"Omitlán de Juárez",
+"San Felipe Orizatlán",
+"Pacula",
+"Pachuca de Soto",
+"Pisaflores",
+"Progreso de Obregón",
+"Mineral de la Progresividad",
+"San Agustín Tlaxiaca",
+"San Bartolo Tutotepec",
+"San Salvador",
+"Santiago de Anaya",
+"Santiago Tulantepec de Lugo Guerrero",
+"Singuilucan",
+"Tasquillo",
+"Tecozautla",
+"Tenango de Doria",
+"Tepeapulco",
+"Tepehuacán de Guerrero",
+"Tepeji del Río de Ocampo",
+"Tepetitlán",
+"TetepangoVilla de Tezontepec",
+"Tezontepec de Aldama",
+"Tianguistengo",
+"Tizayuca",
+"Tlahuelilpan",
+"Tlahuiltepa",
+"Tlanalapa",
+"Tlanchinol",
+"Tlaxcoapan",
+"Tolcayuca",
+"Tula de Allende",
+"Tulancingo de Bravo",
+"Xochiatipan",
+"Xochicoatlán",
+"Yahualica",
+"Zacualtipán de Ángeles",
+"Zapotlán de Juárez",
+"Zempoala",
+"Zimapán"
+],
+
+"Nuevo Leon": [
+"Abasolo",
+"Agualeguas",
+"Los Aldamas",
+"Allende",
+"Anáhuac",
+"Apodaca",
+"Aramberri",
+"Bustamante",
+"Cadereyta Jiménez",
+"El Carmen",
+"Cerralvo",
+"Ciénega de Flores",
+"China",
+"Doctor Arroyo",
+"Doctor Coss",
+"Doctor González",
+"Galeana",
+"García",
+"General Bravo",
+"General Escobedo",
+"General Terán",
+"General Treviño",
+"General Zaragoza",
+"General Zuazua",
+"Guadalupe",
+"Los Herreras",
+"Higueras",
+"Hualahuises",
+"Iturbide",
+"Juárez",
+"Lampazos de Naranjo",
+"Linares",
+"Marín",
+"Melchor Ocampo",
+"Mier y Noriega",
+"Mina",
+"Montemorelos",
+"Monterrey",
+"Parás",
+"Pesquería",
+"Los Ramones",
+"Rayones",
+"Sabinas Hidalgo",
+"Salinas Victoria",
+"San Nicolás de los Garza",
+"San Pedro Garza García",
+"Santa Catarina",
+"Santiago",
+"Vallecillo",
+"Villaldama"
+],
+
+"Estado de México": [
+"Acambay de Ruíz Castañeda",
+"Acolman",
+"Aculco",
+"Almoloya de Alquisiras",
+"Almoloya de Juárez",
+"Almoloya del Río",
+"Amanalco",
+"Amatepec",
+"Amecameca",
+"Apaxco",
+"Atenco",
+"Atizapán",
+"Atizapán de Zaragoza",
+"Atlautla",
+"Atlacomulco",
+"Axapusco",
+"Ayapango",
+"Calimaya",
+"Capulhuac",
+"Coacalco de Berriozábal",
+"Coatepec Harinas",
+"Cocotitlán",
+"Coyotepec",
+"Cuautitlán",
+"Cuautitlán Izcalli",
+"Chalco",
+"Chapa de Mota",
+"Chapultepec",
+"Chiautla",
+"Chicaoloapan",
+"Chiconcuac",
+"Chimalhuacán",
+"Donato Guerra",
+"Ecatepec de Morelos",
+"Ecatzingo",
+"Huehuetoca",
+"Hueypoxtla",
+"Huixquilucan",
+"Isidro Fabela",
+"Ixtapaluca",
+"Ixtapan de la Sal",
+"Ixtapan del Oro",
+"Ixtlahuaca",
+"Jaltenco",
+"Jilotepec",
+"Jilotzingo",
+"Jiquipilco",
+"Jocotitlán",
+"Joquicingo",
+"Juchitepec",
+"Lerma",
+"Luvianos",
+"Malinalco",
+"Melchor Ocampo",
+"Metepec",
+"Mexicaltzingo",
+"Morelos",
+"Naucalpan de Juárez",
+"Nextlalpan",
+"Nezahualcóyotl",
+"Nicolás Romero",
+"Nopaltepec",
+"Ocoyoacac",
+"Ocuilan",
+"El Oro",
+"Otumba",
+"Otzoloapan",
+"Otzolotepec",
+"Ozumba",
+"Papalotla",
+"La Paz",
+"Polotitlán",
+"Rayón",
+"San Antonio la Isla",
+"San Felipe del Progreso",
+"San José del Rincón",
+"San Martín de las Pirámides",
+"San Mateo Atenco",
+"San Simón de Guerrero",
+"Santo Tomás",
+"Soyaniquilpan de Juárez",
+"Sultepec",
+"Tecámac",
+"Tejupilco",
+"Temamatla",
+"Temascalapa",
+"Temascalcingo",
+"Temascaltepec",
+"Temoaya",
+"Tenancingo",
+"Tenango del Aire",
+"Tenango del Valle",
+"Teoloyucan",
+"Teotihuacán",
+"Tepetlaoxtoc",
+"Tepetlixpa",
+"Tepotzotlán",
+"Tequixquiac",
+"Texcaltitlán",
+"Texcalyacac",
+"Texcoco",
+"Tezoyuca",
+"Tianguistenco",
+"Tilapa",
+"Tlalmanalco",
+"Tlalnepantla de Baz",
+"Tlatlaya",
+"Toluca",
+"Tonanitla",
+"Tonatico",
+"Tultepec",
+"Tultitlán",
+"Valle de Chalco Solidaridad",
+"Valle de Bravo",
+"Villa de Allende",
+"Villa del Carbón",
+"Villa Guerrero",
+"Villa Victoria",
+"Xalatlaco",
+"Xonacatlán",
+"Zacazonapan",
+"Zacualpan",
+"Zinacantepec",
+"Zumpahuacán",
+"Zumpango"
+],
+
+};
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    // --- 1. LÓGICA DE ESTADOS Y MUNICIPIOS ---
+    const estadoSelect = document.getElementById("estado");
+    const municipioSelect = document.getElementById("municipio");
+
+    if (estadoSelect && municipioSelect) {
+        estadoSelect.addEventListener("change", function () {
+            const estadoSeleccionado = this.value;
+            municipioSelect.innerHTML = "";
+
+            if (estadoSeleccionado && municipiosPorEstado[estadoSeleccionado]) {
+                municipioSelect.disabled = false;
+                const opcionInicial = document.createElement("option");
+                opcionInicial.value = "";
+                opcionInicial.textContent = "Selecciona un municipio...";
+                municipioSelect.appendChild(opcionInicial);
+
+                municipiosPorEstado[estadoSeleccionado].forEach(municipio => {
+                    const option = document.createElement("option");
+                    option.value = municipio;
+                    option.textContent = municipio;
+                    municipioSelect.appendChild(option);
+                });
+            } else {
+                municipioSelect.disabled = true;
+                municipioSelect.innerHTML = '<option value="">Primero elige un estado...</option>';
+            }
+        });
+    }
+
+    // --- 2. VALIDACIÓN Y ENVÍO DEL REPORTE ---
+    const btnEnviar = document.getElementById("btnEnviar");
+
+    if (btnEnviar) {
+        btnEnviar.addEventListener("click", function (e) {
+            
+            // Si el botón está en un <form>, descomenta la siguiente línea para evitar que la página se recargue sola
+            // e.preventDefault(); 
+
+            const estado = estadoSelect.value;
+            const municipio = municipioSelect.value;
+            const direccion = document.getElementById("direccion").value.trim();
+            const descripcion = document.getElementById("descripcion").value.trim();
+            const fotos = document.getElementById("fotos").files;
+
+            if (!estado) { alert("Por favor selecciona un estado."); return; }
+            if (!municipio) { alert("Por favor selecciona un municipio."); return; }
+            if (!direccion) { alert("Por favor ingresa la dirección exacta."); return; }
+            if (!descripcion) { alert("Por favor describe el problema."); return; }
+
+            alert(
+                "Reporte enviado correctamente.\n\n" +
+                "Estado: " + estado + "\n" +
+                "Municipio: " + municipio + "\n" +
+                "Dirección: " + direccion + "\n" +
+                "Fotos adjuntas: " + fotos.length
+            );
+
+            // Reiniciar formulario
+            estadoSelect.value = "";
+            municipioSelect.innerHTML = '<option value="">Primero elige un estado...</option>';
+            municipioSelect.disabled = true;
+            document.getElementById("direccion").value = "";
+            document.getElementById("descripcion").value = "";
+            document.getElementById("fotos").value = "";
+        });
+    }
+
+    // --- 3. AUTOCOMPLETADO DE DIRECCIÓN (API Nominatim) ---
+    const input = document.getElementById("direccion");
+    
+    // Verificamos que el input de dirección exista antes de continuar
+    if (!input) {
+        console.error("No se encontró el input con id='direccion'");
+        return; 
+    }
+
+    const sugerenciasBox = document.createElement("div");
+
+    // Estilos corregidos para asegurar que la caja sea visible y flote por encima
+    sugerenciasBox.style.position = "absolute";
+    sugerenciasBox.style.backgroundColor = "white";
+    sugerenciasBox.style.border = "1px solid #ccc";
+    sugerenciasBox.style.zIndex = "9999"; // Valor alto para evitar que quede detrás de otros elementos
+    sugerenciasBox.style.maxHeight = "200px";
+    sugerenciasBox.style.overflowY = "auto";
+    sugerenciasBox.style.width = "100%"; // Usamos 100% en lugar de offsetWidth
+    sugerenciasBox.style.top = "100%";   // Se coloca justo debajo del input
+    sugerenciasBox.style.left = "0";
+    sugerenciasBox.style.borderRadius = "0 0 5px 5px";
+    sugerenciasBox.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+
+    input.parentNode.style.position = "relative"; 
+    input.parentNode.appendChild(sugerenciasBox);
+
+    // Temporizador para evitar bloqueos de la API (Debounce)
+    let timeoutId; 
+
+    input.addEventListener("input", () => {
+        clearTimeout(timeoutId); // Detiene el temporizador si sigues escribiendo
+        const query = input.value.trim();
+
+        if (query.length < 4) {
+            sugerenciasBox.innerHTML = "";
+            return;
+        }
+
+        // Espera medio segundo (500ms) después de que dejas de escribir para buscar.
+        // Esto evita que OpenStreetMap te bloquee por exceso de peticiones.
+        timeoutId = setTimeout(async () => {
+            // Agregamos countrycodes=mx para forzar búsquedas solo en México
+            const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&countrycodes=mx`;
+
+            try {
+                const res = await fetch(url);
+                const data = await res.json();
+
+                sugerenciasBox.innerHTML = "";
+
+                if (data.length === 0) {
+                    sugerenciasBox.innerHTML = "<div style='padding: 8px; color: #888;'>No se encontraron resultados...</div>";
+                    return;
+                }
+
+                data.forEach(place => {
+                    const item = document.createElement("div");
+                    item.textContent = place.display_name;
+                    item.style.cursor = "pointer";
+                    item.style.padding = "10px";
+                    item.style.borderBottom = "1px solid #eee";
+                    item.style.fontSize = "14px";
+
+                    item.onmouseover = () => item.style.backgroundColor = "#f0f8ff";
+                    item.onmouseout = () => item.style.backgroundColor = "white";
+
+                    item.onclick = () => {
+                        input.value = place.display_name; 
+                        sugerenciasBox.innerHTML = "";
+                    };
+
+                    sugerenciasBox.appendChild(item);
+                });
+            } catch (error) {
+                console.error("Error al buscar la dirección:", error);
+            }
+        }, 500); 
+    });
+
+    // Ocultar sugerencias si se hace clic fuera de la caja
+    document.addEventListener("click", function(e) {
+        if (e.target !== input && e.target !== sugerenciasBox) {
+            sugerenciasBox.innerHTML = "";
+        }
+    });
+
+}); 
+// FIN DEL DOMContentLoaded

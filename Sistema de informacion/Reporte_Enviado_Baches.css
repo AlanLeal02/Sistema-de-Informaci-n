@@ -1,0 +1,89 @@
+/* --- Estilos Globales --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Usamos una fuente limpia */
+}
+
+body {
+    background-color: #f4f4f4; /* Fondo gris muy claro para el cuerpo */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe todo el alto de la pantalla */
+}
+
+/* --- Encabezado --- */
+header {
+    background-color: #3b403d; /* Color gris oscuro idéntico al original */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* --- Contenedor Principal Centrado --- */
+main {
+    flex: 1; /* Ocupa el espacio restante del alto de la pantalla */
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    padding: 20px;
+}
+
+.contenedor-confirmacion {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para que no se vea muy estirada en PC */
+}
+
+/* --- Tarjeta de Éxito --- */
+.tarjeta-exito {
+    background-color: #ffffff;
+    padding: 60px 40px;
+    border-radius: 8px; /* Bordes suaves */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.mensaje-principal {
+    font-size: 1.8rem;
+    color: #3b403d; /* Gris oscuro para el texto principal */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.mensaje-secundario {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* --- Botón Confirmar --- */
+.boton-confirmar {
+    background-color: #3b403d; /* Gris oscuro idéntico al original */
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+.boton-confirmar:hover {
+    background-color: #2a2e2c; /* Un gris aún más oscuro al pasar el mouse */
+}
